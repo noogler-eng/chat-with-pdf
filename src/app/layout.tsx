@@ -5,6 +5,8 @@ import "./globals.css";
 import Provider from "@/components/provider";
 import Navbar from "@/components/Navbar";
 import "@uploadthing/react/styles.css";
+import { Toaster } from "@/components/ui/toaster"
+
 
 
 const pacifico = Pacifico({subsets: ['vietnamese'], weight:'400'})
@@ -23,6 +25,7 @@ export default function RootLayout({children}: Readonly<{
         <Provider>
           <Navbar/>
           {children}
+          <Toaster/>
         </Provider>
       </body>
     </html>
